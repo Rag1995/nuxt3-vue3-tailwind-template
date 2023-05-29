@@ -9,10 +9,12 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:tailwindcss/recommended',
   ],
-  plugins: [],
+  // plugins: ['@typescript-eslint', 'vue', 'tailwindcss'],
   overrides: [
     {
       files: ['*.vue'],
@@ -20,17 +22,21 @@ module.exports = {
     },
   ],
   rules: {
+    semi: ['off', 'never'],
+    '@typescript-eslint/semi': ['warn', 'never'],
+
+    quotes: 'off',
+    '@typescript-eslint/quotes': ['warn', 'single'],
+
+    'comma-spacing': 'off',
+    '@typescript-eslint/comma-spacing': ['warn', { before: false, after: true }],
+
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': ['warn', 'always-multiline'],
+
+    '@typescript-eslint/no-var-requires': 'off',
+
     'no-undef': 'off',
-    'no-trailing-spaces': [
-      'warn',
-      {
-        skipBlankLines: false,
-        ignoreComments: false,
-      },
-    ],
-    'comma-dangle': ['error', 'always-multiline'],
-    'vue/multi-word-component-names': ['error', {
-      ignores: ['index'],
-    }],
+    'vue/multi-word-component-names': 'off',
   },
 }
