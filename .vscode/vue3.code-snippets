@@ -1,0 +1,50 @@
+{
+  "Vue SFC: <script setup>": {
+    "scope": "vue",
+    "prefix": ["<script", "setup"],
+    "description": "Vue SFC template for script setup",
+    "body": ["<script setup lang=\"ts\">", "</script>", ""]
+  },
+  "Vue SFC: <template>": {
+    "scope": "vue",
+    "prefix": ["<template", "template"],
+    "description": "Vue SFC template tag",
+    "body": "<template>$1</template>"
+  },
+  "Vue SFC: <style>": {
+    "scope": "vue",
+    "prefix": ["<style"],
+    "description": "Vue SFC template tag",
+    "body": ["<style lang=\"scss\" scoped>", "", "</style>"]
+  },
+  "Vue SFC html: <template>": {
+    "scope": "html",
+    "prefix": ["<template", "template"],
+    "description": "Vue SFC template tag",
+    "body": "<template lang=\"pug\">$1</template>"
+  },
+  "Vue SFC: defineProps": {
+    "scope": "typescript",
+    "prefix": ["props", "defineProps"],
+    "description": "Vue SFC defineProps",
+    "body": "const props = defineProps<{}>()"
+  },
+  "Vue SFC: defineEmits": {
+    "scope": "typescript",
+    "prefix": ["emit", "defineEmits"],
+    "description": "Vue SFC defineEmits",
+    "body": ["const emit = defineEmits<Emits>()", "interface Emits {", "  $0", "}"]
+  },
+  "Typescript SFC: new Promise": {
+    "scope": "typescript",
+    "prefix": ["new Promise", "Promise"],
+    "description": "Typescript SFC Promise",
+    "body": ["new Promise((resolve, reject) => {", "  $0", "})", ""]
+  },
+  "Pinia SFC: defineStore": {
+    "scope": "typescript",
+    "prefix": ["defineStore", "store"],
+    "description": "Pinia SFC defineStore",
+    "body": ["export const $0 = defineStore($1, () => {", "  $2", "})", ""]
+  }
+}

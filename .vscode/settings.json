@@ -1,0 +1,30 @@
+{
+  // 縮排字元
+  "editor.tabSize": 2,
+  // 自動換行
+  "editor.wordWrap": "on",
+  // 自動換行長度
+  "editor.wordWrapColumn": 80,
+  // 每次存檔時自動修復
+  "editor.formatOnSave": false,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // 設定 Stylelint
+  "stylelint.validate": ["css", "scss", "sass", "vue"],
+  // 預設 formatter
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "iconify",
+    "Nuxt",
+    "nuxtjs",
+    "pinia",
+    "tailwindcss",
+    "unplugin",
+    "vite",
+    "vueuse"
+  ]
+}
