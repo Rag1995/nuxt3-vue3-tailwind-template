@@ -1,42 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Vue 3 + TypeScript + Nuxt3 + TailwindCSS
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### 請記得安奘以下 vscode 擴充模組
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Vue.volar
+- Vue.vscode-typescript-vue-plugin
+- microsoft.ESLint
+- Tailwind-Labs.tailwindcss-intellisense
+- jun-han.auto-rename-tag
+- JerryHong.autofilename
+- christian-kohler.path-intellisense
+- Kiss-Tamas.image-preview
+- street-side-software.code-spell-checker
+- Gruntfuggly.todo-tree
