@@ -1,8 +1,10 @@
+const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class'],
   content: [
     './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
@@ -12,13 +14,25 @@ module.exports = {
     './app.vue',
   ],
   theme: {
-    screens: {},
+    // screens: {},
     container: {
       center: true,
-      padding: '2rem',
-      screens: {},
+      padding: '1rem',
+      // screens: {},
     },
-    extend: {},
+    // fontFamily: {
+    //   cubic11: ['Cubic11'],
+    // },
+    extend: {
+      colors: {
+        light: {
+          DEFAULT: colors.zinc[50],
+        },
+        dark: {
+          DEFAULT: colors.zinc[800],
+        },
+      },
+    },
   },
   plugins: [
     plugin(({ addVariant }) => {
